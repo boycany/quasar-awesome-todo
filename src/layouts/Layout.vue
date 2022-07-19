@@ -104,8 +104,9 @@ export default {
 
   .q-drawer {
     .q-router-link--exact-active{
-      background-color: lightsalmon !important;
-      color: white !important;
+      background-color: $blue-1 !important;
+      font-weight: 500;
+      color: black !important;
     }
   }
 </style>
