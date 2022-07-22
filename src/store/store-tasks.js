@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 const state = {
   tasks: {
     "ID1": {
@@ -22,11 +24,26 @@ const state = {
 }
 
 const mutations = {
-
+  updateTask(state, payload){
+    console.log('payload from mutations :>> ', payload);
+    Object.assign(state.tasks[payload.id], payload.updates)
+  },
+  deleteTask(state, id){
+    console.log('id :>> ', id);
+    Vue.delete(state.tasks, id)
+  },
 }
 
 const actions = {
-
+  updateTask({ commit }, payload){
+    // console.log('payload from actions:>> ', payload);
+    // console.log('updateTask action');
+    //commit('name of mutation we want to trigger', 'sth want to pass in mutation')
+    commit('updateTask', payload)
+  },
+  deleteTask({ commit }, id){
+    commit('deleteTask', id)
+  }
 }
 
 const getters = {
