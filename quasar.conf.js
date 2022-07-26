@@ -92,10 +92,32 @@ module.exports = function (/* ctx */) {
       // you can manually specify Quasar components/directives to be available everywhere:
       //
       // components: [
+      //   'QLayout',
+      //   'QHeader',
+      //   'QDrawer',
+      //   'QPageContainer',
+      //   'QPage',
+      //   'QToolbar',
+      //   'QToolbarTitle',
+      //   'QBtn',
+      //   'QIcon',
+      //   'QList',
+      //   'QItem',
+      //   'QItemSection',
+      //   'QItemLabel',
+      //   'QFooter',
+      //   'QTabs',
+      //   'QTab',
+      //   'QRouteTab',
+      //   'QCheckbox',
+      //   'QSpace',
+      //   'QInput',
+      //   'QDate',
+      //   'QPopupProxy',
       //   'QCard',
       //   'QCardSection',
       //   'QCardActions',
-      //   'QDialog'
+      //   'QDialog',
       // ],
       // directives: [
       //   'ClosePopup'
